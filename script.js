@@ -4,7 +4,7 @@ const noBtn = document.querySelector(".no-btn");
 const yesBtn = document.querySelector(".yes-btn");
 
 const title = document.getElementById("letter-title");
-const catImg = document.getElementById("letter-cat");
+const hornet = document.getElementById("letter-hornet");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 
@@ -39,7 +39,7 @@ noBtn.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
   title.textContent = "Yayyy!";
 
-  catImg.src = "cat_dance.gif";
+  hornet.classList.add("pixelart-to-css");
   document.querySelector(".letter-window").classList.add("final");
   buttons.style.display = "none";
   finalText.style.display = "block";
