@@ -4,7 +4,7 @@ const noBtn = document.querySelector(".no-btn");
 const yesBtn = document.querySelector(".yes-btn");
 
 const title = document.getElementById("letter-title");
-const hornet = document.getElementById("letter-hornet");
+const hornet = document.querySelector(".hornet");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 
@@ -39,7 +39,7 @@ noBtn.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
   title.textContent = "Yayyy!";
 
-  hornet.classList.add("pixelart-to-css");
+  hornet.classList.add("pop");
   document.querySelector(".letter-window").classList.add("final");
   buttons.style.display = "none";
   finalText.style.display = "block";
